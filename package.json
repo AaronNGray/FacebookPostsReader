@@ -1,0 +1,25 @@
+{
+  "name": "FacebookPostsReader",
+  "version": "1.0.0",
+  "main": "dist/PostsReader.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.11.0"
+  },
+  "scripts": {
+    "build:browser": "parcel build lib/PostsReader.js --out-dir dist",
+    "build:browser:debug": "parcel build lib/PostsReader.js --out-dir dist --no-minify",
+    "build:node": "parcel build lib/PostsReader.js --out-dir dist --node",
+    "build:node:debug": "parcel build lib/PostsReader.js --out-dir dist --target node --no-minify"
+  },
+  "dependencies": {
+    "fb": "^2.0.0",
+    "node-fetch": "^2.3.0",
+    "underscore": "^1.9.1"
+  }
+}
